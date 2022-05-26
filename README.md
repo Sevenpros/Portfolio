@@ -1,62 +1,46 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Portfolio
 
-> Description the project.
+> This my portfolio project where you are going going to find all information about me including what i do
+wich project i have done so far as well as my contact information in case you get interested and want to reach me.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
+- HTML & CSS
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
+- Visit my github repo of this project [@githubhandle](https://github.com/Sevenpros/Portfolio)
+- clone the project into you pc.
+- run the index.hmtl through your prefered web browser
+- enjoy
 
 ### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
+- In order to clone the project you need to have a git installed in your computer
+- To run the project you will need to have a web browser installed on your computer as well.
 
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Seth Bizimana**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/Sevenpros)
+- Twitter: [@twitterhandle](https://twitter.com/BizimanaSeth)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/sethBizimana)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+
 
 ## Show your support
 
@@ -68,6 +52,4 @@ Give a ⭐️ if you like this project!
 - Inspiration
 - etc
 
-## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
