@@ -53,3 +53,49 @@ a {
   flex-direction: column;
   gap: -5px;
 }
+.headline {
+  font-family: 'Poppins';
+  font-size: 16px;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 120px 24px;
+  gap: 12px;
+  position: absolute;
+  width: 375px;
+  height: 590px;
+  left: 0px;
+  top: 92px;
+  background: #1C1A19;
+  color: white;
+  box-sizing: border-box;
+}
+.main-header span{
+  width:327px;
+  height: 124px;
+  font-family: 'Crete Round';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 64px;
+  letter-spacing: 0.37;
+  color: #FF6B00;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.main-header h2 {
+  font-size: 24px;
+}
+.headline-desc {
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.social-icons {
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
