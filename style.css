@@ -4,18 +4,10 @@ body {
 }
 
 .top-header {
-  position: absolute;
-  width: 375px;
   height: 92px;
   left: 0;
   top: 0;
   background: #3c3a39;
-}
-
-.icons-section {
-  padding: 15px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .time {
@@ -31,6 +23,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 5px 20px;
+  height: 92px;
 }
 
 a {
@@ -70,9 +63,7 @@ img {
   align-items: flex-start;
   padding: 120px 24px;
   gap: 12px;
-  position: absolute;
-  width: 375px;
-  height: 590px;
+  min-height: 590px;
   left: 0;
   top: 92px;
   background: #1c1a19;
@@ -85,7 +76,7 @@ img {
 }
 
 .main-header h1 {
-  width: 327px;
+  min-width: 327px;
   height: 124px;
   font-family: 'Crete Round', Courier, monospace;
   font-style: normal;
