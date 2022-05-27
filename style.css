@@ -210,6 +210,22 @@ img {
   border: none;
 }
 
+.project-button:hover {
+  color: #f55800;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+}
+
+.disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+}
+
+.project-button:active {
+  color: #f4f1f0;
+  background: #e05304;
+}
+
 .mobile-card {
   background-image: url('images/background.png');
   min-height: 435px;
@@ -291,11 +307,14 @@ img {
   flex-shrink: 0;
 }
 
-.languages {
+.categories {
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 30px 30px;
+  gap: 20px;
+  list-style-image: url('images/bullet.png');
+  list-style-position: inside;
 }
 
 .lang-header {
@@ -310,6 +329,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  list-style: none;
 }
 
 .lang-list li {
