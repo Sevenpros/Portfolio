@@ -10,10 +10,6 @@ body {
   background: #3c3a39;
 }
 
-.time {
-  margin-left: 10px;
-}
-
 .menu-icon {
   margin-right: 10px;
 }
@@ -29,6 +25,16 @@ body {
 a {
   text-decoration: none;
   color: #fff;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+hr {
+  margin-bottom: 50px;
 }
 
 .logo-name {
@@ -111,4 +117,225 @@ img {
   justify-content: space-around;
   align-items: center;
   gap: 20px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  row-gap: 20px;
+  padding: 10px 40px;
+  box-sizing: content-box;
+  font-family: 'Inter', Courier, monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.projects-section-title {
+  font-family: 'Crete Round', Courier, monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  margin-top: 100px;
+}
+
+.desc-title {
+  font-family: 'Crete Round', Courier, monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  margin: 0;
+}
+
+.description {
+  font-family: 'Inter', Courier, monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+}
+
+.project-tech {
+  display: flex;
+  gap: 20px;
+  justify-content: start;
+}
+
+.project-tech li a {
+  box-sizing: border-box;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px;
+  border: 1px solid black;
+  font-family: 'Inter', Courier, monospace;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  color: #091e42;
+}
+
+.project-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  width: 124px;
+  height: 48px;
+  background: #ff6b00;
+  font-family: 'Inter', Courier, monospace;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  border: none;
+}
+
+.project-button:hover {
+  color: #f55800;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+}
+
+.disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+}
+
+.project-button:active {
+  color: #f4f1f0;
+  background: #e05304;
+}
+
+.mobile-card {
+  background-image: url('images/background.png');
+  min-height: 435px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.transparent {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.938));
+  box-sizing: border-box;
+  min-height: 435px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mobile-desc {
+  padding: 25px 25px 0 25px;
+  color: white;
+}
+
+.mobile-description {
+  color: white;
+  font-weight: bold;
+}
+
+.mobile-tech {
+  padding: 0 25px;
+}
+
+.mobile-tech li a {
+  color: white;
+  background: rgba(255, 255, 255, 0.24);
+  border: none;
+  font-weight: bold;
+}
+
+.mobile-button {
+  display: flex;
+  flex: 1;
+  background: #ff6b00;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-section {
+  background: #1c1a19;
+  color: white;
+  box-sizing: border-box;
+  padding: 20px 30px;
+  min-height: 600px;
+}
+
+.about-header h3 {
+  font-size: 52px;
+  font-family: 'Crete Round', Courier, monospace;
+  color: #ff6b00;
+  margin: 0;
+}
+
+.abt-bottom {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 150px;
+}
+
+.abt-pic {
+  min-width: 160px;
+  min-height: 259px;
+  position: absolute;
+  right: 0;
+  top: 600%;
+  bottom: 44.13%;
+}
+
+.about-btn {
+  width: 150px;
+  flex-shrink: 0;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px 30px;
+  gap: 20px;
+  list-style-image: url('images/bullet.png');
+  list-style-position: inside;
+}
+
+.lang-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.lang-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+}
+
+.lang-list li {
+  font-size: 24px;
+}
+
+.lang-title {
+  font-family: 'Inter', Courier, monospace;
 }
