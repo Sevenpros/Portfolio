@@ -36,6 +36,7 @@ ul {
 hr {
   margin-bottom: 50px;
 }
+
 .logo-name {
   font-family: 'Roboto', Courier, monospace;
   font-style: normal;
@@ -125,7 +126,7 @@ img {
   row-gap: 20px;
   padding: 10px 40px;
   box-sizing: content-box;
-  font-family: 'Inter';
+  font-family: 'Inter', Courier, monospace;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -137,8 +138,9 @@ img {
   flex-direction: column;
   gap: 10px;
 }
+
 .projects-section-title {
-  font-family: 'Crete Round';
+  font-family: 'Crete Round', Courier, monospace;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -147,7 +149,7 @@ img {
 }
 
 .desc-title {
-  font-family: 'Crete Round';
+  font-family: 'Crete Round', Courier, monospace;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -156,19 +158,18 @@ img {
 }
 
 .description {
-  font-family: 'Inter';
+  font-family: 'Inter', Courier, monospace;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #091E42;
+  color: #091e42;
 }
 
 .project-image img {
   width: 100%;
   height: auto;
 }
-
 
 .project-tech {
   display: flex;
@@ -184,12 +185,11 @@ img {
   align-items: center;
   padding: 10px 12px;
   border: 1px solid black;
-  font-family: 'Inter';
+  font-family: 'Inter', Courier, monospace;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
   line-height: 20px;
-  color: #091E42;
+  color: #091e42;
 }
 
 .project-button {
@@ -200,8 +200,8 @@ img {
   gap: 10px;
   width: 124px;
   height: 48px;
-  background: #FF6B00;
-  font-family: 'Inter';
+  background: #ff6b00;
+  font-family: 'Inter', Courier, monospace;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -227,9 +227,10 @@ img {
 }
 
 .mobile-desc {
-  padding:25px 25px 0 25px;
+  padding: 25px 25px 0 25px;
   color: white;
 }
+
 .mobile-description {
   color: white;
   font-weight: bold;
@@ -237,7 +238,6 @@ img {
 
 .mobile-tech {
   padding: 0 25px;
-  
 }
 
 .mobile-tech li a {
@@ -250,7 +250,7 @@ img {
 .mobile-button {
   display: flex;
   flex: 1;
-  background: #FF6B00;
+  background: #ff6b00;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -261,15 +261,16 @@ img {
   color: white;
   box-sizing: border-box;
   padding: 20px 30px;
-  min-height:600px;
+  min-height: 600px;
 }
 
 .about-header h3 {
   font-size: 52px;
-  font-family: 'Crete Round';
-  color: #FF6B00;
+  font-family: 'Crete Round', Courier, monospace;
+  color: #ff6b00;
   margin: 0;
 }
+
 .abt-bottom {
   display: flex;
   gap: 10px;
@@ -279,9 +280,6 @@ img {
 .abt-pic {
   min-width: 160px;
   min-height: 259px;
-}
-
-.abt-pic {
   position: absolute;
   right: 0;
   top: 560%;
@@ -319,5 +317,5 @@ img {
 }
 
 .lang-title {
-  font-family: 'Inter';
+  font-family: 'Inter', Courier, monospace;
 }
