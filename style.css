@@ -359,5 +359,55 @@ img {
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
+}
 
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  border: 0.05 rem 0.1 rem #DBD8D7;
+}
+
+.contact-form .textarea {
+  height: 114px;
+  margin-bottom: 24px;
+  margin-top: 24px;
+  background-color: #fbf8f7;
+  outline: none;
+  border: none;
+  padding: 12px;
+}
+
+textarea::placeholder {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #3C3A39;
+}
+
+.contact-form input {
+  border: none;
+  outline: none;
+  padding: 14px;
+  border-bottom: 1px solid #DBD8D7;
+}
+
+::placeholder {
+  font-size: 15px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #979493;
+}
+
+.contact-btn {
+  display: flex;
+  width: 131px;
+  margin: 2px auto;
 }
