@@ -7,6 +7,8 @@ body {
   height: 92px;
   left: 0;
   top: 0;
+  position: fixed;
+  width: 100%;
   background: #3c3a39;
 }
 
@@ -265,11 +267,11 @@ img {
 
 .mobile-button {
   display: flex;
-  flex: 1;
   background: #ff6b00;
   width: 100%;
   justify-content: center;
   align-items: center;
+  margin-top: auto;
 }
 
 .about-section {
@@ -305,6 +307,9 @@ img {
 .about-btn {
   width: 150px;
   flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .categories {
@@ -338,4 +343,21 @@ img {
 
 .lang-title {
   font-family: 'Inter', Courier, monospace;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px;
+}
+
+.contact-desc {
+  font-family: 'Inter', Courier, monospace;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+
 }
