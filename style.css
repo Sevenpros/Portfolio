@@ -7,6 +7,8 @@ body {
   height: 92px;
   left: 0;
   top: 0;
+  position: fixed;
+  width: 100%;
   background: #3c3a39;
 }
 
@@ -265,11 +267,11 @@ img {
 
 .mobile-button {
   display: flex;
-  flex: 1;
   background: #ff6b00;
   width: 100%;
   justify-content: center;
   align-items: center;
+  margin-top: auto;
 }
 
 .about-section {
@@ -293,18 +295,12 @@ img {
   margin-bottom: 150px;
 }
 
-.abt-pic {
-  min-width: 160px;
-  min-height: 259px;
-  position: absolute;
-  right: 0;
-  top: 600%;
-  bottom: 44.13%;
-}
-
 .about-btn {
   width: 150px;
   flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .categories {
@@ -338,4 +334,69 @@ img {
 
 .lang-title {
   font-family: 'Inter', Courier, monospace;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px;
+}
+
+.contact-desc {
+  font-family: 'Inter', Courier, monospace;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border: 0.05 rem 0.1 rem #dbd8d7;
+}
+
+.contact-form .textarea {
+  height: 114px;
+  margin-bottom: 24px;
+  background: #fbf8f7;
+  outline: none;
+  border: none;
+  padding: 12px;
+}
+
+textarea::placeholder {
+  font-family: 'Inter', Courier, monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #3c3a39;
+}
+
+.contact-form input {
+  border: none;
+  outline: none;
+  padding: 14px;
+  border-bottom: 1px solid #dbd8d7;
+}
+
+::placeholder {
+  font-size: 15px;
+  font-family: 'Inter', Courier, monospace;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #979493;
+}
+
+.contact-btn {
+  display: flex;
+  width: 131px;
+  margin: 2px auto;
 }
