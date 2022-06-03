@@ -447,6 +447,7 @@ textarea::placeholder {
     width: 70%;
   }
 }
+
 @media (min-width: 768px) {
   .menu-bar-desktop {
     display: flex;
@@ -466,7 +467,6 @@ textarea::placeholder {
     background-image: none;
     align-items: center;
     padding-right: 0;
-
   }
 
   .projects {
@@ -536,7 +536,7 @@ textarea::placeholder {
   }
 
   .about-section {
-    padding:136px 0;
+    padding: 136px 0;
   }
 
   .about-header {
