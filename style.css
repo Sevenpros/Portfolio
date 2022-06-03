@@ -63,6 +63,11 @@ hr {
   flex: none;
   order: 0;
   flex-grow: 0;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.logo-name:hover {
+  transform: rotate(360deg);
 }
 
 img {
@@ -201,12 +206,25 @@ img {
 .project-image img {
   width: 100%;
   height: auto;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.project-image img:hover {
+  transform: scale(1.1);
 }
 
 .project-tech {
   display: flex;
   gap: 20px;
   justify-content: start;
+}
+
+.footer-icons a {
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.social-icons a {
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
 .project-tech li a {
@@ -246,6 +264,7 @@ img {
   color: #f55800;
   background: #fff5e1;
   border: 1px solid #f55800;
+  transition: all 0.5s ease-out;
 }
 
 .disabled {
@@ -294,6 +313,16 @@ img {
   background: rgba(255, 255, 255, 0.24);
   border: none;
   font-weight: bold;
+}
+
+.social-icons a:hover {
+  transform: scale(1.5);
+  transition: 0.5s;
+}
+
+.footer-icons a:hover {
+  transform: scale(1.5);
+  transition: 0.5s;
 }
 
 .mobile-button {
@@ -434,6 +463,7 @@ textarea::placeholder {
   min-height: 71px;
   border-top: 1px solid #dfe1e6;
   color: #505f79;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
 .desc {
@@ -451,6 +481,10 @@ textarea::placeholder {
 @media (min-width: 768px) {
   .menu-bar-desktop {
     display: flex;
+  }
+
+  .menu-bar-desktop li:hover {
+    transform: scale(1.2);
   }
 
   .menu-icon {
@@ -476,6 +510,7 @@ textarea::placeholder {
   .social-icons {
     flex-direction: column;
     gap: 10px;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
   }
 
   .head-background {
