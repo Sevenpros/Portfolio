@@ -52,22 +52,42 @@ hr {
 }
 
 .logo-name {
-  font-family: 'Roboto', Courier, monospace;
+  font-family: 'Crete Round', Courier, monospace;
   font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
+  font-weight: bolder;
+  font-size: 28px;
   line-height: 24px;
-  text-align: center;
-  display: flex;
-  align-items: center;
   flex: none;
+  color: #ff6b00;
   order: 0;
   flex-grow: 0;
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
-.logo-name:hover {
-  transform: rotate(360deg);
+.logo-circle {
+  border: 5px #ff6b00 dotted;
+  border-radius: 50%;
+  transition: width 2s, height 2s, transform 1.5s;
+  min-width: 66px;
+  min-height: 77px;
+  margin-top: -100%;
+}
+
+.logo-circle:hover {
+  transform: rotate(180deg);
+}
+
+.logo {
+  min-width: 45px;
+  min-height: 52px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px white solid;
+  margin: 2px;
+  background-color: black;
+  transform-style: unset;
 }
 
 img {
@@ -206,7 +226,7 @@ img {
 .project-image img {
   width: 100%;
   height: auto;
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
+  transition: width 2s, height 2s, transform 0.5s;
 }
 
 .project-image img:hover {
@@ -220,11 +240,11 @@ img {
 }
 
 .footer-icons a {
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
+  transition: width 2s, height 2s, transform 0.5s;
 }
 
 .social-icons a {
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
+  transition: width 2s, height 2s, transform 0.5s;
 }
 
 .project-tech li a {
@@ -606,6 +626,7 @@ textarea::placeholder {
 
   .footer-icons {
     flex-direction: row;
+    gap: 30px;
   }
 
   .lang-list {
