@@ -3,7 +3,7 @@
 # Portfolio
 
 > This my portfolio project where you are going going to find all information about me including what i do
-wich project i have done so far as well as my contact information in case you get interested and want to reach me.
+wich project i have done so far as well as my contact information in case you get interested and want to reach me.[click Here]( https://sevenpros.github.io/Portfolio/)to check it.
 
 
 ## Built With
@@ -12,6 +12,7 @@ wich project i have done so far as well as my contact information in case you ge
 
 
 ## Getting Started
+
 
 
 To get a local copy up and running follow these simple example steps.
