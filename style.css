@@ -31,8 +31,7 @@ body {
 .nav-bar-mobile {
   padding: 25px 24px;
   background-color: #3c3a39;
-  min-height: 700px
-  
+  min-height: 700px;
 }
 
 .nav-button {
@@ -42,14 +41,19 @@ body {
 }
 
 .menu-list {
-  padding :20px 0;
+  padding: 20px 0;
 }
+
+hr {
+  margin-bottom: 50px 147px;
+}
+
 .menu-list hr {
   border: 1px solid #6f6c6b;
 }
 
 .menu-list li {
-  font-family: 'Inter';
+  font-family: 'Inter', Courier, monospace;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -80,10 +84,6 @@ ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-hr {
-  margin-bottom: 50px 147px;
 }
 
 .logo-name {

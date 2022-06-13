@@ -1,14 +1,15 @@
-const showMenu = document.querySelector("#show-menu");
+const showMenuBtn = document.querySelector("#show-menu");
 const mobileMenu = document.querySelector('.nav-bar-mobile');
 const navBar = document.querySelector('.nav-bar');
-const cancelMenu = document.querySelector('#cancel-menu');
+const cancelMenuBtn = document.querySelector('#cancel-menu');
 const menuList = document.querySelectorAll('.menu-list');
-showMenu.addEventListener('click', e => {
+
+showMenuBtn.addEventListener('click', e => {
     navBar.classList.add('invisible');
     mobileMenu.classList.remove('invisible');
 });
 
-cancelMenu.addEventListener('click', e => {
+cancelMenuBtn.addEventListener('click', e => {
     navBar.classList.remove('invisible');
     mobileMenu.classList.add('invisible');
 })
