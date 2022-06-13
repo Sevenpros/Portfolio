@@ -3,6 +3,10 @@ body {
   padding: 0;
 }
 
+.invisible {
+  display: none;
+}
+
 .top-header {
   height: 92px;
   left: 0;
@@ -25,7 +29,6 @@ body {
 }
 
 .nav-bar-mobile {
-  display: none;
   padding: 25px 24px;
   background-color: #3c3a39;
   min-height: 700px
