@@ -24,6 +24,38 @@ body {
   height: 92px;
 }
 
+.nav-bar-mobile {
+  display: none;
+  padding: 25px 24px;
+  background-color: #3c3a39;
+  min-height: 700px
+  
+}
+
+.nav-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu-list {
+  padding :20px 0;
+}
+.menu-list hr {
+  border: 1px solid #6f6c6b;
+}
+
+.menu-list li {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #fff5e1;
+}
+
 .menu-bar-desktop {
   justify-content: center;
   gap: 18px;
