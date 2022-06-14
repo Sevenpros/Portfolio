@@ -44,7 +44,6 @@ body {
   padding: 20px 0;
 }
 
-
 .menu-list hr {
   border: 1px solid #6f6c6b;
 }
@@ -465,7 +464,6 @@ img {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  border: 0.05rem 0.1rem #dbd8d7;
 }
 
 .contact-form .textarea {
