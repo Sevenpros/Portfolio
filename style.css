@@ -3,6 +3,10 @@ body {
   padding: 0;
 }
 
+.invisible {
+  display: none;
+}
+
 .top-header {
   height: 92px;
   left: 0;
@@ -22,6 +26,37 @@ body {
   align-items: center;
   padding: 5px 24px;
   height: 92px;
+}
+
+.nav-bar-mobile {
+  padding: 25px 24px;
+  background-color: #3c3a39;
+  min-height: 700px;
+}
+
+.nav-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu-list {
+  padding: 20px 0;
+}
+
+.menu-list hr {
+  border: 1px solid #6f6c6b;
+}
+
+.menu-list li {
+  font-family: 'Inter', Courier, monospace;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #fff5e1;
 }
 
 .menu-bar-desktop {
@@ -45,10 +80,6 @@ ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-hr {
-  margin-bottom: 50px 147px;
 }
 
 .logo-name {
@@ -433,7 +464,6 @@ img {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  border: 0.05 rem 0.1 rem #dbd8d7;
 }
 
 .contact-form .textarea {
