@@ -15,6 +15,6 @@ cancelMenuBtn.addEventListener('click', () => {
 menuList.forEach((list) => {
   list.addEventListener('click', () => {
     navBar.classList.toggle('invisible');
-    mobileMenu.classList.toggle('invisible');   
+    mobileMenu.classList.toggle('invisible');
   });
 });
