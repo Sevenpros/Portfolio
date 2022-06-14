@@ -5,17 +5,17 @@ const cancelMenuBtn = document.querySelector('#cancel-menu');
 const menuList = document.querySelectorAll('.menu-list');
 
 showMenuBtn.addEventListener('click', e => {
-    navBar.classList.add('invisible');
-    mobileMenu.classList.remove('invisible');
+    navBar.classList.toggle('invisible');
+    mobileMenu.classList.toggle('invisible');
 });
 
 cancelMenuBtn.addEventListener('click', e => {
-    navBar.classList.remove('invisible');
-    mobileMenu.classList.add('invisible');
+    navBar.classList.toggle('invisible');
+    mobileMenu.classList.toggle('invisible');
 })
 menuList.forEach(list => {
     list.addEventListener('click',e => {
-        navBar.classList.remove('invisible');
-        mobileMenu.classList.add('invisible');    
+        navBar.classList.toggle('invisible');
+        mobileMenu.classList.toggle('invisible');    
     })
 })
