@@ -337,7 +337,7 @@ img {
 }
 
 .transparent {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.938));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.938));
   box-sizing: border-box;
   min-height: 435px;
   display: flex;
@@ -402,7 +402,6 @@ img {
 
 .about-btn {
   width: 150px;
-  flex-shrink: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -525,16 +524,17 @@ textarea::placeholder {
 .project-details {
   min-height: 600px;
   background-color: rgba(0, 0, 0, 0.527);
-  position: absolute;
+  position: fixed;
   z-index: 10;
   top: 0;
+  width: 100%;
 }
 
 .modal {
-  min-height: 600px;
   margin: 8px 24px;
   padding: 32px 24px;
   background: white;
+  overflow: auto;
 }
 
 .modal-header {
@@ -559,7 +559,7 @@ textarea::placeholder {
 .pro-links {
   display: flex;
   justify-content: space-between;
-
+  gap: 20px;
 }
 
 @media (max-width: 410px) {
@@ -702,4 +702,33 @@ textarea::placeholder {
   .lang-list {
     text-align: left;
   }
+
+  .tech-details li {
+    margin: 0 0 12px 0;
+  }
+
+  .flex-container {
+    display: flex;
+    gap: 20px
+  }
+  
+  .project-details {
+    text-align: center;
+  }
+
+  .modal {
+    width: 70%;
+    margin: 100px auto;
+    height: 500px;
+
+  }
+
+  .pro-description {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+  }
+
+  
 }
