@@ -522,6 +522,46 @@ textarea::placeholder {
   gap: 16px;
 }
 
+.project-details {
+  min-height: 600px;
+  background-color: rgba(0, 0, 0, 0.527);
+  position: absolute;
+  z-index: 10;
+  top: 0;
+}
+
+.modal {
+  min-height: 600px;
+  margin: 8px 24px;
+  padding: 32px 24px;
+  background: white;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  color: #172b4d;
+}
+
+.tech-details li {
+  margin: 20px 0;
+}
+
+.project-img img {
+  width: 100%;
+}
+
+.pro-links {
+  display: flex;
+  justify-content: space-between;
+
+}
+
 @media (max-width: 410px) {
   .headline-description {
     width: 70%;
