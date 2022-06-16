@@ -262,3 +262,26 @@ modalContainer.addEventListener('click', (e) => {
     modalContainer.classList.add('invisible');
   }
 });
+function displayError(error) {
+  const errorDiv = document.querySelector('.error-div');
+  const errorMessageDiv = document.querySelector('.error-message');
+  errorDiv.classList.remove('invisible');
+  errorMessageDiv.textContent = error;
+}
+
+const cancelMessage = document.querySelector('#cancel-message');
+cancelMessage.addEventListener('click', () => {
+  const errorDiv = document.querySelector('.error-div');
+  errorDiv.classList.add('invisible');
+});
+
+const contactForm = document.querySelector('#cont-form');
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const email = document.querySelector('#email');
+  const emailAddress = email.value;
+  const upperCaseEmail = emailAddress.toUpperCase();
+  const errorMessage = 'Only use small letters for email address please.';
+  if (upperCaseEmail !== emailAddress)contactForm.submit();
+  else displayError(errorMessage);
+});
