@@ -48,7 +48,6 @@ body {
   border: 1px solid #6f6c6b;
 }
 
-
 .menu-list li {
   font-family: 'Inter', Courier, monospace;
   font-style: normal;
@@ -712,7 +711,7 @@ textarea::placeholder {
     display: flex;
     gap: 20px;
   }
-  
+
   .project-details {
     text-align: center;
   }
