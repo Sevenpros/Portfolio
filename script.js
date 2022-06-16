@@ -37,66 +37,42 @@ const projects = [
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
     when an unknown printer took a galley of type and scrambled it 1960s with 
     the releax map lapora verita.`,
+    'images/Portfolio.png',
+    'HTML,CSS, JAVASCRIPT',
+    'index.html',
+    'index.html'),
+  createProject('Data Dashboard Healthcare',
+    'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     'images/project1.png',
     'HTML,CSS, JAVASCRIPT',
     'index.html',
     'index.html'),
-  createProject('Portfolio',
-    ` when an unknown printer took a galley of type and scrambled it 1960s with the 
-    releaLorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled it 1960s with 
-    the releax map lapora verita.`,
-    'images/project1.png',
-    'HTML,CSS, JAVASCRIPT',
-    'index.html',
-    'index.html'),
-  createProject('Mobile App',
-    ` when an unknown printer took a galley of type and scrambled it 1960s with the 
-    releaLorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled it 1960s with 
-    the releax map lapora verita.`,
+  createProject('Website Protfolio',
+    ' A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     'images/project1.png',
     'XML,CSS, JAVASCRIPT',
     'index.html',
     'index.html'),
-  createProject('Web Projectg',
-    ` when an unknown printer took a galley of type and scrambled it 1960s with the 
-    releaLorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled it 1960s with 
-    the releax map lapora verita.`,
+  createProject('Profesional Art Printing',
+    ' A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     'images/project1.png',
     'XML,CSS, JAVASCRIPT',
     'index.html',
     'index.html'),
-  createProject('Best Mobile App',
-    ` when an unknown printer took a galley of type and scrambled it 1960s with the 
-    releaLorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled it 1960s with 
-    the releax map lapora verita.`,
+  createProject('Data Dashboard Healthcare',
+    'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     'images/project1.png',
     'XML,CSS, JAVASCRIPT',
     'index.html',
     'index.html'),
   createProject('New Web App',
-    ` when an unknown printer took a galley of type and scrambled it 1960s with the 
-    releaLorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled it 1960s with 
-    the releax map lapora verita.`,
+    'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     'images/project1.png',
     'XML,CSS, JAVASCRIPT',
     'index.html',
     'index.html'),
-  createProject('M-Finance App',
-    ` when an unknown printer took a galley of type and scrambled it 1960s with the 
-    releaLorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled it 1960s with 
-    the releax map lapora verita.`,
+  createProject('Website Protfolio',
+    'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     'images/project1.png',
     'XML,CSS, JAVASCRIPT',
     'index.html',
@@ -164,6 +140,8 @@ function fillProject() {
       projectArticle.classList.add('mobile-card');
       const transparent = document.createElement('div');
       transparent.classList.add('transparent');
+      const flexDescription = document.createElement('div');
+      flexDescription.classList.add('flex-description');
       const projectDesc = document.createElement('div');
       projectDesc.classList.add('project-desc');
       projectDesc.classList.add('mobile-desc');
@@ -187,8 +165,9 @@ function fillProject() {
       });
       gridContainer.appendChild(projectArticle);
       projectArticle.appendChild(transparent);
-      transparent.appendChild(projectDesc);
-      transparent.appendChild(techLists);
+      flexDescription.appendChild(projectDesc);
+      flexDescription.appendChild(techLists);
+      transparent.appendChild(flexDescription);
       transparent.appendChild(projectBtns);
     }
   }
@@ -236,8 +215,8 @@ function fillModal(project) {
   projectDescription.innerHTML = `
       <p class="descript">${project.description}</p>
       <div class="pro-links">
-          <a href="${project.liveLink}" class="project-button about-btn">See Live</a>
-          <a href="${project.sourceLink}" class="project-button about-btn">See Source</a>
+          <a href="${project.liveLink}" class="project-button about-btn">See Live <img src="images/live.png"></a>
+          <a href="${project.sourceLink}" class="project-button about-btn">See Source <img src="images/GitHub.png"></a>
       </div>
      `;
   flexContainer.appendChild(projectDescription);

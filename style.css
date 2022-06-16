@@ -354,6 +354,13 @@ img {
   color: white;
 }
 
+.flex-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 300px;
+}
+
 .mobile-description {
   color: white;
   font-weight: bold;
@@ -409,6 +416,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
 }
 
 .categories {
@@ -536,9 +544,10 @@ textarea::placeholder {
 
 .modal {
   margin: 8px 24px;
-  padding: 32px 24px;
+  padding: 20px 24px;
   background: white;
   overflow: auto;
+  height: 600px;
 }
 
 .modal-header {
@@ -553,7 +562,16 @@ textarea::placeholder {
 }
 
 .tech-details li {
-  margin: 20px 0;
+  margin-bottom: 10px;
+}
+
+.descript {
+  font-family: 'Inter', Courier, monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
 }
 
 .pro-links {
@@ -707,6 +725,10 @@ textarea::placeholder {
     text-align: left;
   }
 
+  .desc-title {
+    font-size: 28px;
+  }
+
   .flex-container {
     display: flex;
     gap: 20px;
@@ -727,5 +749,13 @@ textarea::placeholder {
     display: flex;
     flex-direction: column;
     gap: 20%;
+  }
+
+  .mobile-card {
+    min-height: auto;
+  }
+
+  .transparent {
+    min-height: auto;
   }
 }
