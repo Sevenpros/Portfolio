@@ -48,6 +48,7 @@ body {
   border: 1px solid #6f6c6b;
 }
 
+
 .menu-list li {
   font-family: 'Inter', Courier, monospace;
   font-style: normal;
@@ -258,6 +259,10 @@ img {
   width: 100%;
   height: auto;
   transition: width 2s, height 2s, transform 0.5s;
+}
+
+.project-img img {
+  width: 100%;
 }
 
 .project-image img:hover {
@@ -541,7 +546,7 @@ textarea::placeholder {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Roboto';
+  font-family: 'Roboto', Courier, monospace;
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
@@ -550,10 +555,6 @@ textarea::placeholder {
 
 .tech-details li {
   margin: 20px 0;
-}
-
-.project-img img {
-  width: 100%;
 }
 
 .pro-links {
@@ -571,6 +572,10 @@ textarea::placeholder {
 @media (min-width: 768px) {
   .menu-bar-desktop {
     display: flex;
+  }
+
+  .tech-details li {
+    margin: 0 0 12px 0;
   }
 
   .menu-bar-desktop li:hover {
@@ -703,13 +708,9 @@ textarea::placeholder {
     text-align: left;
   }
 
-  .tech-details li {
-    margin: 0 0 12px 0;
-  }
-
   .flex-container {
     display: flex;
-    gap: 20px
+    gap: 20px;
   }
   
   .project-details {
@@ -720,7 +721,6 @@ textarea::placeholder {
     width: 70%;
     margin: 100px auto;
     height: 500px;
-
   }
 
   .pro-description {
@@ -729,6 +729,4 @@ textarea::placeholder {
     flex-direction: column;
     gap: 20%;
   }
-
-  
 }
