@@ -256,8 +256,12 @@ img {
 
 .project-image img {
   width: 100%;
-  height: auto;
+  height: 100%;
   transition: width 2s, height 2s, transform 0.5s;
+}
+
+.project-img img {
+  width: 100%;
 }
 
 .project-image img:hover {
@@ -337,7 +341,7 @@ img {
 }
 
 .transparent {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.938));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.938));
   box-sizing: border-box;
   min-height: 435px;
   display: flex;
@@ -348,6 +352,13 @@ img {
 .mobile-desc {
   padding: 25px 24px 0 25px;
   color: white;
+}
+
+.flex-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 300px;
 }
 
 .mobile-description {
@@ -402,10 +413,10 @@ img {
 
 .about-btn {
   width: 150px;
-  flex-shrink: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
 }
 
 .categories {
@@ -522,6 +533,52 @@ textarea::placeholder {
   gap: 16px;
 }
 
+.project-details {
+  min-height: 600px;
+  background-color: rgba(0, 0, 0, 0.527);
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+}
+
+.modal {
+  margin: 8px 24px;
+  padding: 20px 24px;
+  background: white;
+  overflow: auto;
+  height: 600px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Roboto', Courier, monospace;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  color: #172b4d;
+}
+
+.tech-details li {
+  margin-bottom: 10px;
+}
+
+.descript {
+  font-family: 'Inter', Courier, monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.pro-links {
+  display: flex;
+  gap: 20px;
+}
+
 @media (max-width: 410px) {
   .headline-description {
     width: 70%;
@@ -531,6 +588,10 @@ textarea::placeholder {
 @media (min-width: 768px) {
   .menu-bar-desktop {
     display: flex;
+  }
+
+  .tech-details li {
+    margin: 0 0 12px 0;
   }
 
   .menu-bar-desktop li:hover {
@@ -661,5 +722,39 @@ textarea::placeholder {
 
   .lang-list {
     text-align: left;
+  }
+
+  .desc-title {
+    font-size: 28px;
+  }
+
+  .flex-container {
+    display: flex;
+    gap: 20px;
+  }
+
+  .project-details {
+    text-align: center;
+  }
+
+  .modal {
+    width: 70%;
+    margin: 100px auto;
+    height: 500px;
+  }
+
+  .pro-description {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .mobile-card {
+    min-height: auto;
+  }
+
+  .transparent {
+    min-height: auto;
   }
 }
