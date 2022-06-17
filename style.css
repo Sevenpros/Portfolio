@@ -3,10 +3,6 @@ body {
   padding: 0;
 }
 
-.invisible {
-  display: none;
-}
-
 .top-header {
   height: 92px;
   left: 0;
@@ -519,6 +515,25 @@ textarea::placeholder {
   margin: 2px auto;
 }
 
+.error-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff5e1;
+  min-height: 70px;
+  font-family: 'Inter', Courier, monospace;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #f55800;
+  gap: 8px;
+  padding: 0 5px;
+}
+
+#cancel-message {
+  margin-bottom: 8%;
+}
+
 .footer-icons {
   justify-content: center;
   min-height: 71px;
@@ -577,6 +592,10 @@ textarea::placeholder {
 .pro-links {
   display: flex;
   gap: 20px;
+}
+
+.invisible {
+  display: none;
 }
 
 @media (max-width: 410px) {

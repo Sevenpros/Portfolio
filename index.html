@@ -124,8 +124,12 @@
                 </p>
                 <form class="contact-form" id="cont-form" action="https://formspree.io/f/xpzbbkgv" method="post">
                     <input type="text" name="name" class="name" placeholder="Full name" maxlength="30" required>
-                    <input type="email" name="email" class="email" placeholder="Email Address" maxlength="30" required>
+                    <input type="email" id="email" name="email" class="email" placeholder="Email Address" maxlength="30" required>
                     <textarea class="textarea" name="message" placeholder="Enter Text Here" maxlength="500" required></textarea>
+                    <div class="error-div invisible">
+                        <div class="error-message"></div>
+                        <img id="cancel-message" src="images/cancel.png">
+                    </div>
                     <input type="submit" class="project-button mobile-button contact-btn" value="Get in touch">
                 </form>
             </article>
