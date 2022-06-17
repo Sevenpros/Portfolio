@@ -221,7 +221,49 @@ function fillModal(project) {
   modalContainer.appendChild(modal);
 }
 
-window.addEventListener('load', () => fillPage());
+function isStorageAvailable(type) {
+  let storage;
+  try {
+    storage = window[type];
+    const testItem = 'hello';
+    storage.setItem(testItem, testItem);
+    storage.removeItem(testItem);
+    return true;
+  } catch (error) {
+    return error instanceof DOMException && (
+      error.code === 22
+      || error.code === 1014
+      || error.name === 'QuotaExceededError'
+      || error.name === 'NS_ERROR_DOM_QUOTA_REACHED')
+      && (storage && storage.length !== 0);
+  }
+}
+function addStorage() {
+  const name = document.querySelector('#name').value;
+  const email = document.querySelector('#email').value;
+  const message = document.querySelector('#message').value;
+  const formData = {
+    name,
+    email,
+    message,
+  };
+  if (isStorageAvailable('localStorage')) {
+    localStorage.setItem('form', JSON.stringify(formData));
+  }
+}
+
+function setForm() {
+  const formData = JSON.parse(localStorage.getItem('form'));
+  if (!formData.name) {
+    addStorage();
+  } else {
+    document.querySelector('#name').value = formData.name;
+    document.querySelector('#email').value = formData.email;
+    document.querySelector('#message').value = formData.message;
+  }
+}
+
+window.addEventListener('load', () => { fillPage(); setForm(); });
 
 const modalContainer = document.querySelector('.project-details');
 
@@ -258,6 +300,11 @@ contactForm.addEventListener('submit', (e) => {
   const email = document.querySelector('#email');
   const emailAddress = email.value;
   const error = 'only use small letter for email address please.';
-  if (emailAddress === emailAddress.toLowerCase()) contactForm.submit();
-  else displayError(error);
+  if (emailAddress === emailAddress.toLowerCase()) {
+    contactForm.submit();
+  } else displayError(error);
+});
+
+contactForm.addEventListener('change', () => {
+  addStorage();
 });
