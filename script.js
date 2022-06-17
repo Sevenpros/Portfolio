@@ -280,8 +280,7 @@ contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
   const email = document.querySelector('#email');
   const emailAddress = email.value;
-  const upperCaseEmail = emailAddress.toUpperCase();
-  const errorMessage = 'Only use small letters for email address please.';
-  if (upperCaseEmail !== emailAddress)contactForm.submit();
-  else displayError(errorMessage);
+  const error = 'only use small letter for email address please.'
+  if (emailAddress === emailAddress.toLowerCase()) contactForm.submit()
+  else displayError(error)
 });
