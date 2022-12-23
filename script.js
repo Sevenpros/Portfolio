@@ -31,50 +31,50 @@ function createProject(name, description, image, technologies, liveLink, sourceL
   return project;
 }
 const projects = [
-  createProject('Multi Post Stories',
-    ` when an unknown printer took a galley of type and scrambled it 1960s with the 
-    releaLorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard.`,
-    'images/Portfolio.png',
+  createProject('DOCTOR-MEET-UP',
+    ` DOCTOR-MEET-UP App is a React API web application(consist of mobile and desktop versions)
+    that allows users to book an appointment with their Doctors,
+    users are allowed to add or remove doctor from the list with a decent friendly design.`,
+    'images/doctor.jpg',
+    'RUBY,REACT, PostGres',
+    'https://meetup.sethpro.com/',
+    'https://github.com/Sevenpros/doctor-meet-up-frontend'),
+  createProject('BUDGET APP',
+    'MY-BUDGET is a mobile web application that allows users to manage their budgets. Basically, a user can create different categories and add some transactions to the specific category after he/she can be able to know how much money she/he spent on what.',
+    'images/budget_app.jpg',
+    'RUBY,RAILS, POSTGRES',
+    'https://my-budget.onrender.com',
+    'https://github.com/Sevenpros/My-budget'),
+  createProject('Africa\'s Talking Conference',
+    ' This is The platform for Africa’s talking conference, so most of the contents presented in this project are references to the mentioned event. If you want to have such an awesome design for yourself or your company, you are in right place.',
+    'images/conference.jpg',
     'HTML,CSS, JAVASCRIPT',
-    'index.html',
-    'index.html'),
-  createProject('Data Dashboard Healthcare',
-    'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    'images/project1.png',
-    'HTML,CSS, JAVASCRIPT',
-    'index.html',
-    'index.html'),
-  createProject('Website Protfolio',
-    ' A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    'images/project1.png',
-    'XML,CSS, JAVASCRIPT',
-    'index.html',
-    'index.html'),
-  createProject('Profesional Art Printing',
-    ' A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    'images/project1.png',
-    'XML,CSS, JAVASCRIPT',
-    'index.html',
-    'index.html'),
-  createProject('Data Dashboard Healthcare',
-    'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    'images/project1.png',
-    'XML,CSS, JAVASCRIPT',
-    'index.html',
-    'index.html'),
-  createProject('New Web App',
-    'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    'images/project1.png',
-    'XML,CSS, JAVASCRIPT',
-    'index.html',
-    'index.html'),
-  createProject('Website Protfolio',
-    'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    'images/project1.png',
-    'XML,CSS, JAVASCRIPT',
-    'index.html',
-    'index.html'),
+    'https://conference.sethpro.com/',
+    'https://github.com/Sevenpros/Africas_talking_conference'),
+  createProject('METRICS APP',
+    ' This is a mobile web app where a user can view the real updated coronavirus information from all around the world, from the list of countries he/she can click on selected countries and the app takes you to the details page where you can see all details of coronavirus information of the selected county',
+    'images/metrics.jpg',
+    'REACT,REDUX, API',
+    'https://metrics.sethpro.com',
+    'https://github.com/Sevenpros/metrics-app'),
+  createProject('MEALS',
+    'In this project, using API different kinds of foods with pictures and descriptions are displayed on the page, the interface will let the user navigate through different kinds of foods by clicking on a particular category. Also, a user can like or comment on a specific meal.',
+    'images/meals.png',
+    'WEBPACK, JAVASCRIPT',
+    'https://meals.sethpro.com',
+    'https://github.com/Sevenpros/meals'),
+  createProject('TODO LIST',
+    'Todo_list is a web app that helps users to manage their to-do lists on daily basis. The app allows users to add, modify or delete the selected activity.',
+    'images/todo.jpg',
+    'BOOTSTRAP, JAVASCRIPT',
+    'https://todollist.sethpro.com',
+    'https://github.com/Sevenpros/todolist-app'),
+  createProject('BOOK STORE',
+    'With the design of this project, the user can add books to the shelve (object array) by clicking the add button and removing the books when the remove button is clicked.',
+    'images/bookstore.png',
+    'BOOTSTRAP, JAVASCRIPT',
+    'https://bookstore.sethpro.com',
+    'https://github.com/Sevenpros/book-store'),
 ];
 
 function getProjectByName(name) {
@@ -213,8 +213,8 @@ function fillModal(project) {
   projectDescription.innerHTML = `
       <p class="descript">${project.description}</p>
       <div class="pro-links">
-          <a href="${project.liveLink}" class="project-button about-btn">See Live <img src="images/live.png"></a>
-          <a href="${project.sourceLink}" class="project-button about-btn">See Source <img src="images/GitHub.png"></a>
+          <a href="${project.liveLink}" target="_blank" class="project-button about-btn">See Live <img src="images/live.png"></a>
+          <a href="${project.sourceLink}" target="_blank" class="project-button about-btn">See Source <img src="images/GitHub.png"></a>
       </div>
      `;
   flexContainer.appendChild(projectDescription);

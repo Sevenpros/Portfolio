@@ -31,17 +31,14 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Seth Bizimana**
 
-- GitHub: [@githubhandle](https://github.com/Sevenpros)
-- Twitter: [@twitterhandle](https://twitter.com/BizimanaSeth)
+- GitHub: [@Github](https://github.com/Sevenpros)
+- Twitter: [@twitter](https://twitter.com/BizimanaSeth)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/sethBizimana)
 
 👤
 
 ## 🤝 Contributing
-
 Contributions, issues, and feature requests are welcome!
-
-
 
 ## Show your support
 
