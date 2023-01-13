@@ -32,9 +32,10 @@ function createProject(name, description, image, technologies, liveLink, sourceL
 }
 const projects = [
   createProject('DOCTOR-MEET-UP',
-    ` DOCTOR-MEET-UP App is a React API web application(consist of mobile and desktop versions)
-    that allows users to book an appointment with their Doctors,
-    users are allowed to add or remove doctor from the list with a decent friendly design.`,
+    `DOCTOR-MEET-UP App is a React API web application
+    (consisting of mobile and desktop versions) that allows users to
+    book an appointment with their Doctors, users are allowed to add or
+    remove doctors from the list with a decent-friendly design.`,
     'images/doctor.jpg',
     'RUBY,REACT, PostGres',
     'https://meetup.sethpro.com/',
@@ -64,7 +65,7 @@ const projects = [
     'https://meals.sethpro.com',
     'https://github.com/Sevenpros/meals'),
   createProject('TODO LIST',
-    'Todo_list is a web app that helps users to manage their to-do lists on daily basis. The app allows users to add, modify or delete the selected activity.',
+    'Todo_list is a web app that helps users manage their to-do lists. The app allows users to add, modify or delete the selected activity.',
     'images/todo.jpg',
     'BOOTSTRAP, JAVASCRIPT',
     'https://todollist.sethpro.com',
@@ -87,7 +88,7 @@ function fillHeader() {
   header.classList.add('project-header');
   const projectTitle = document.createElement('h2');
   projectTitle.classList.add('"projects-section-title');
-  projectTitle.textContent = 'My Recent Works';
+  projectTitle.textContent = 'My recent work';
   const line = document.createElement('div');
   line.classList.add('line');
   header.appendChild(projectTitle);
