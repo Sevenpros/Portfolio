@@ -9,6 +9,7 @@ body {
   left: 0;
   top: 0;
   position: fixed;
+  z-index: 1;
   width: 100%;
   background: #1a1431;
 }
@@ -211,6 +212,7 @@ img {
   order: 1;
   flex-grow: 0;
   display: flex;
+  padding-top: 3vw;
   justify-content: center;
   align-items: center;
   gap: 20px;
